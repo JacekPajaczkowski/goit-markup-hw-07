@@ -85,7 +85,7 @@ body {
   margin: 0;
 }
 
-.list1 {
+.navigation__list1 {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -103,7 +103,7 @@ body {
   display: flex;
   margin-left: 93px;
 }
-.list1-link {
+.navigation__list1-link {
   text-decoration: none;
   color: var(--shadow2);
   transition-property: color;
@@ -111,13 +111,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list1 :hover,
-.list1 :focus {
+.navigation__list1 :hover,
+.navigation__list1 :focus {
   color: var(--brand-color);
   text-decoration: none;
 }
-.list1-link:hover::after,
-.list1-link:focus::after {
+.navigation__list1-link:hover::after,
+.navigation__list1-link:focus::after {
   content: "";
   display: block;
   position: relative;
@@ -161,7 +161,7 @@ body {
   justify-content: space-around;
   padding-left: 0%;
 }
-.mail {
+.adres-list__mail {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -173,8 +173,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail:hover,
-.mail:focus {
+.adres-list__mail:hover,
+.adres-list__mail:focus {
   color: var(--brand-color);
   text-decoration: none;
   fill: var(--color2, #2196f3);
@@ -184,7 +184,7 @@ body {
   color: var(--brand-color);
   text-decoration: none;
 }
-.phone {
+.adres-list__phone {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -196,8 +196,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.phone:hover,
-.phone:focus {
+.adres-list__phone:hover,
+.adres-list__phone:focus {
   color: var(--brand-color);
   text-decoration: none;
   fill: var(--color2, #2196f3);
