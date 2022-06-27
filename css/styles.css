@@ -399,14 +399,14 @@ body {
   font-weight: 700;
   color: var(--black);
 }
-.figcaption2 {
+.cards__figcaption--head {
   font-family: "Roboto";
   font-weight: 700;
   color: var(--black);
   line-height: 2;
   margin-left: 24px;
 }
-.figcaption2-text {
+.cards__figcaption--text {
   line-height: 1.87;
   margin-left: 24px;
   margin-bottom: 20px;
@@ -678,7 +678,7 @@ p {
   transition-property: scale, opacity, transform;
 }
 
-.overlay {
+.cards__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -691,18 +691,18 @@ p {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay p {
+.cards__overlay p {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
   padding: 49px 24px 49px 24px;
 }
-.cards__figure:hover .overlay,
-.cards__figure:focus .overlay {
+.cards__figure:hover .cards__overlay,
+.cards__figure:focus .cards__overlay {
   transform: translatey(0);
 }
-.product__box-overlay {
+.product__box-cards__overlay {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
