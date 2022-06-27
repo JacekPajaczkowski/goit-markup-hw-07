@@ -30,7 +30,7 @@ body {
 .title {
   color: var(--brand-color);
 }
-.list2__headline {
+.description__headline {
   font-weight: 700;
   line-height: 1.17;
   color: var(--black);
@@ -85,7 +85,7 @@ body {
   margin: 0;
 }
 
-.navigation__list1 {
+.navigation__list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -103,7 +103,7 @@ body {
   display: flex;
   margin-left: 93px;
 }
-.navigation__list1-link {
+.navigation__list-link {
   text-decoration: none;
   color: var(--shadow2);
   transition-property: color;
@@ -111,13 +111,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation__list1 :hover,
-.navigation__list1 :focus {
+.navigation__list :hover,
+.navigation__list :focus {
   color: var(--brand-color);
   text-decoration: none;
 }
-.navigation__list1-link:hover::after,
-.navigation__list1-link:focus::after {
+.navigation__list-link:hover::after,
+.navigation__list-link:focus::after {
   content: "";
   display: block;
   position: relative;
@@ -215,7 +215,7 @@ body {
   line-height: 1.17;
   margin-top: 0px;
 }
-.list2 {
+.description {
   list-style: none;
   text-align: left;
   line-height: 1.71;
@@ -225,10 +225,10 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.list2 li {
+.description li {
   text-decoration: none;
 }
-.list2 li:nth-child(1n + 2) {
+.description li:nth-child(1n + 2) {
   margin-left: 30px;
 }
 .headline3 {
@@ -240,48 +240,48 @@ body {
   margin-bottom: 50px;
   margin-top: 94px;
 }
-.list3 {
+.product {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding-left: 0%;
   margin-top: 50px;
 }
-.list3 li {
+.product li {
   text-decoration: none;
   position: relative;
 }
-.list4 {
+.team {
   text-align: center;
   list-style: none;
   display: flex;
 
   padding-left: 0%;
 }
-.list4 li {
+.team li {
   text-decoration: none;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.list4 li:nth-child(1n + 2) {
+.team li:nth-child(1n + 2) {
   margin-left: 30px;
 }
-.list4__figure {
+.team__figure {
   margin: 0;
   margin-bottom: 30px;
 }
-.list4__figcaption {
+.team__figcaption {
   font-weight: 500;
   text-align: center;
   color: var(--black);
   line-height: 1.17;
 }
-.list4__figure--img {
+.team__figure--img {
   margin-bottom: 30px;
 }
-.list4__figcaption--p {
+.team__figcaption--p {
   margin-top: 10px;
 }
 .section4 {
@@ -417,22 +417,22 @@ body {
 .portfolio-section {
   display: flex;
 }
-.list1-2 {
+.cards{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0px;
 }
-.list1-2 li:nth-child(-n + 6) {
+.cards__li:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
-.list1-2 li {
+.cards__li {
   transition-property: box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list1-2-figure {
+.cards__figure {
   background: #ffffff;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -442,13 +442,13 @@ body {
   position: relative;
   z-index: 1001;
 }
-.list1-2 li:hover,
-.list1-2 li:focus {
+.cards__li:hover,
+.cards__li:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.list1-2-figcaption {
+.cards__figcaption {
   background: #ffffff;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -498,7 +498,7 @@ p {
   margin: 0;
   padding: 0;
 }
-.list5 {
+.clients {
   display: flex;
   justify-content: space-around;
   padding-bottom: 94px;
@@ -511,13 +511,13 @@ p {
   margin-right: 10px;
 }
 
-.social-list--link:hover,
-.social-list--link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
 
-.social-list--link {
+.social-list__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -532,7 +532,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list--icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
   display: flex;
@@ -547,13 +547,13 @@ p {
   padding-top: 16px;
   padding-bottom: 18px;
 }
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.footer__social-list--link:hover,
+.footer__social-list--link:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
 
-.social-list-link-footer {
+.footer__social-list--link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -569,7 +569,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon-footer {
+.footer__social-list--icon {
   width: 20px;
   height: 20px;
   display: flex;
@@ -577,7 +577,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.social-list-footer {
+.footer__social-list {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -587,7 +587,7 @@ p {
 }
 
 /*fill="#2196f3" style="fill: var(--color2, #2196f3)*/
-.list5__client-icon {
+.clients__client-icon {
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
@@ -600,16 +600,16 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list5__client-icon:hover,
-.list5__client-icon:focus {
+.clients__client-icon:hover,
+.clients__client-icon:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
-.navigation__list1-link--active {
+.navigation__list-link--active {
   text-decoration: none;
   color: var(--brand-color);
 }
-.navigation__list1-link--active::after {
+.navigation__list-link--active::after {
   content: "";
   display: block;
   position: relative;
@@ -698,11 +698,11 @@ p {
   color: #ffffff;
   padding: 49px 24px 49px 24px;
 }
-.list1-2-figure:hover .overlay,
-.list1-2-figure:focus .overlay {
+.cards__figure:hover .overlay,
+.cards__figure:focus .overlay {
   transform: translatey(0);
 }
-.list3__box-overlay {
+.product__box-overlay {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -813,7 +813,7 @@ p {
   font-size: 12px;
   font-weight: 400;
 }
-.button-footer {
+.button {
   background: var(--brand-color);
 
   cursor: pointer;
