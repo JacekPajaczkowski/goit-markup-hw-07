@@ -424,10 +424,10 @@ body {
   justify-content: space-between;
   padding-left: 0px;
 }
-.cards__li:nth-child(-n + 6) {
+.cards li:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
-.cards__li {
+.cards li {
   transition-property: box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
