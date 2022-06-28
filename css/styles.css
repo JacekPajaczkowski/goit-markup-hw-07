@@ -152,6 +152,7 @@ body {
   padding-left: 0%;
   margin-left: 345px;
   width: 321px;
+  list-style: none;
 }
 .footer-adres-list {
   list-style: none;
@@ -410,9 +411,6 @@ body {
   line-height: 1.87;
   margin-left: 24px;
   margin-bottom: 20px;
-}
-.adres-list {
-  list-style: none;
 }
 .portfolio-section {
   display: flex;
