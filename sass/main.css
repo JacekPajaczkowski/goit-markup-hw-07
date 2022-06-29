@@ -52,6 +52,7 @@ p {
   padding-left: 0%;
   margin-left: 345px;
   width: 321px;
+  list-style: none;
 }
 .adres-list__mail {
   font-weight: 500;
@@ -326,9 +327,6 @@ p {
 }
 .logo-link:hover, .logo-link:focus {
   color: var(--brand-color);
-}
-.logo-link:hover, .logo-link:focus {
-  color: var(--white);
 }
 
 .title {
@@ -607,10 +605,6 @@ p {
   width: 254px;
   transition: color;
 }
-.navigation__list:hover, .navigation__list:focus {
-  color: var(--brand-color);
-  text-decoration: none;
-}
 
 .navigation__list-link {
   text-decoration: none;
@@ -626,6 +620,10 @@ p {
   border-top: 4px solid var(--brand-color);
   border-radius: 2px;
   top: 31px;
+}
+.navigation__list-link:hover, .navigation__list-link:focus {
+  color: var(--brand-color);
+  text-decoration: none;
 }
 
 .navigation__list-link--active {
@@ -707,7 +705,7 @@ p {
   text-decoration: none;
   position: relative;
 }
-.product__box-cards__overlay {
+.product__box-overlay {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -932,4 +930,12 @@ p {
 .header {
   background: var(--white);
   border-bottom: 1px solid #ececec;
+}
+
+:root {
+  --white: #fff;
+  --brand-color: #2196f3;
+  --black: #000;
+  --shadow: #2f303a;
+  --shadow2: #212121;
 }/*# sourceMappingURL=main.css.map */

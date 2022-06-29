@@ -15,12 +15,7 @@
   padding-left: 0;
   width: 254px;
   transition: color;
-  &:hover,
-  &:focus {
-    color: var(--brand-color);
-    text-decoration: none;
   }
-}
 .navigation__list-link {
   text-decoration: none;
   color: var(--shadow2);
@@ -35,6 +30,11 @@
     border-top: 4px solid var(--brand-color);
     border-radius: 2px;
     top: 31px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+    text-decoration: none;
   }
 }
 .navigation__list-link--active {
