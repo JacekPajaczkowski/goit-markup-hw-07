@@ -317,11 +317,10 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-link:hover, .logo-link:focus {
+.logo-link__title {
   color: var(--brand-color);
 }
-
-.title {
+.logo-link:hover, .logo-link:focus {
   color: var(--brand-color);
 }
 
@@ -598,14 +597,14 @@ p {
   transition: color;
 }
 
-.navigation__list-link {
+.navigation__link {
   text-decoration: none;
   color: var(--shadow2);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__list-link:hover::after, .navigation__list-link:focus::after {
+.navigation__link:hover::after, .navigation__link:focus::after {
   content: "";
   display: block;
   position: relative;
@@ -613,16 +612,16 @@ p {
   border-radius: 2px;
   top: 31px;
 }
-.navigation__list-link:hover, .navigation__list-link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--brand-color);
   text-decoration: none;
 }
 
-.navigation__list-link--active {
+.navigation__link--active {
   text-decoration: none;
   color: var(--brand-color);
 }
-.navigation__list-link--active::after {
+.navigation__link--active::after {
   content: "";
   display: block;
   position: relative;

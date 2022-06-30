@@ -16,7 +16,7 @@
   width: 254px;
   transition: color;
   }
-.navigation__list-link {
+.navigation__link {
   text-decoration: none;
   color: var(--shadow2);
   transition-property: color;
@@ -37,7 +37,7 @@
     text-decoration: none;
   }
 }
-.navigation__list-link--active {
+.navigation__link--active {
   text-decoration: none;
   color: var(--brand-color);
 
