@@ -15,6 +15,7 @@ body {
 
 .section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .img {
@@ -207,7 +208,6 @@ p {
 .clients {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 94px;
   list-style: none;
 }
 .clients__client-icon {
@@ -235,7 +235,7 @@ p {
   display: flex;
   padding-left: 0%;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 94px;
 }
 .description__headline {
   font-weight: 700;
@@ -753,6 +753,12 @@ p {
   display: flex;
   padding-left: 0%;
 }
+.team__section {
+  background: #f5f4fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .team li {
   text-decoration: none;
   background-color: var(--white);
@@ -884,17 +890,7 @@ p {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  margin-top: 0px;
-}
-
-.headline3 {
-  color: var(--black);
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 
 .section > .section1 {
@@ -902,14 +898,6 @@ p {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.section4 {
-  background: #f5f4fa;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-bottom: 94px;
 }
 
 .header > .container {
