@@ -16,43 +16,36 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a class="logo-link" href="./index.html"
-          ><span class="title">Web</span>Studio</a
-        >
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li>
-              <a class="navigation__list-link" href="./index.html">Agencja</a>
-            </li>
-            <li>
-              <a class="navigation__list-link--active" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li><a class="navigation__list-link" href="#">Kontact</a></li>
-          </ul>
-        </nav>
-        <ul class="adres-list">
+    <div class="container">
+      <a class="logo-link" href="./index.html"><span class="logo-link__title">Web</span>Studio</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
           <li>
-            <a class="adres-list__mail" href="mailto:info@devstudio.com">
-              <svg class="envelope" height="12" width="16">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+            <a class="navigation__link navigation__link--active" href="./index.html">Agencja</a>
           </li>
           <li>
-            <a class="adres-list__phone" href="tel:+48111111111"
-              ><svg class="smartphone" height="16" width="10">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
+            <a class="navigation__link" href="./portfolio.html">Portfolio</a>
           </li>
+          <li><a class="navigation__link" href="#">Kontact</a></li>
         </ul>
-      </div>
-    </header>
+      </nav>
+      <ul class="adres-list">
+        <li>
+          <a class="adres-list__mail" href="mailto:info@devstudio.com">
+            <svg class="envelope" height="12" width="16">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="adres-list__phone" href="tel:+48111111111"><svg class="smartphone" height="16" width="10">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +48 111 111 111</a>
+        </li>
+      </ul>
+    </div>
+  </header>
     <main>
       <section class="container">
         <div class="section1-1">
@@ -281,60 +274,44 @@
       </section>
     </main>
      <footer class="footer1">
-      <div class="container footer2">
-        <div>
-          <a class="logo-link1" href="./index.html"
-            >Web<span class="title1">Studio</span></a
-          >
-          <div class="footer-adress">
-            <ul class="footer-adres-list">
-              <li>m. Warszawa, Al. Jerozolimskie 21</li>
+    <div class="container footer2">
+      <div>
+        <a class="logo-link1" href="./index.html">Web<span class="title1">Studio</span></a>
+        <div class="footer-adress">
+          <ul class="footer-adres-list">
+            <li>m. Warszawa, Al. Jerozolimskie 21</li>
 
-              <li>
-                <a class="mail1" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
+            <li>
+              <a class="mail1" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
 
-              <li>
-                <a class="phone1" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-links">
-          <div>DOŁĄCZ DO NAS</div>
-          <ul class="footer__social-list">
             <li>
-              <a class="footer__social-list--link" href="#"
-                ><svg class="footer__social-list--icon" height="44" width="44">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__social-list--link" href="#"
-                ><svg class="footer__social-list--icon" height="44" width="44">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__social-list--link" href="#"
-                ><svg class="footer__social-list--icon" height="44" width="44">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__social-list--link" href="#"
-                ><svg class="footer__social-list--icon" height="44" width="44">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
+              <a class="phone1" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </div>
+      </div>
+      <div class="footer-links">
+        <div>DOŁĄCZ DO NAS</div>
+        <div class="social-list">
+                  <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44" width="44">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                  <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44" width="44">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                  <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44" width="44">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44" width="44">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
+      </div>
       <div class="newsletter">
         ZAPISZ SIĘ DO NEWSLETTERA
         <form class="form" action="javascript:void(0);">
@@ -346,7 +323,7 @@
           </button>
         </form>
       </div>
-      </div>
-          </footer>
+    </div>
+  </footer>
   </body>
 </html>

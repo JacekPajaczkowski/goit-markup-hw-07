@@ -19,12 +19,13 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__mail:hover,
-  &__mail:focus {
-    color: var(--brand-color);
-    text-decoration: none;
-    fill: var(--color2, #2196f3);
+
+    &:hover,
+    &:focus {
+      color: var(--brand-color);
+      text-decoration: none;
+      fill: var(--color2, #2196f3);
+    }
   }
   &__phone {
     font-weight: 500;
@@ -37,12 +38,13 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__phone:hover,
-  &__phone:focus {
-    color: var(--brand-color);
-    text-decoration: none;
-    fill: var(--color2, #2196f3);
+
+    &:hover,
+    &:focus {
+      color: var(--brand-color);
+      text-decoration: none;
+      fill: var(--color2, #2196f3);
+    }
   }
   & li:first-child {
     margin-right: 30px;

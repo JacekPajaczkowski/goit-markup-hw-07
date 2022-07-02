@@ -1,19 +1,24 @@
-.cards{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 0px;
-  }
-  .cards li:nth-child(-n + 6) {
+.cards {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+  & li:nth-child(-n + 6) {
     margin-bottom: 30px;
   }
-  .cards li {
+  & li {
     transition-property: box-shadow, border-radius;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .cards__figure {
+  & li:hover,
+  & li:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__figure {
     background: #ffffff;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -23,13 +28,7 @@
     position: relative;
     z-index: 1001;
   }
-  .cards li:hover,
-  .cards li:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  .cards__figcaption {
+  &__figcaption {
     background: #ffffff;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
@@ -37,8 +36,20 @@
     padding-top: 20px;
     z-index: 1002;
     position: relative;
+    &--head {
+      font-family: "Roboto";
+      font-weight: 700;
+      color: var(--black);
+      line-height: 2;
+      margin-left: 24px;
+    }
+    &--text {
+      line-height: 1.87;
+      margin-left: 24px;
+      margin-bottom: 20px;
+    }
   }
-    .cards__overlay {
+  &__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,35 +62,25 @@
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .cards__overlay p {
+  &__overlay p {
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: #ffffff;
     padding: 49px 24px 49px 24px;
   }
-  .cards__figure:hover .cards__overlay,
-  .cards__figure:focus .cards__overlay {
+
+  &__figure:hover &__overlay,
+  &__figure:focus &__overlay {
     transform: translatey(0);
   }
-  .cards__figcaption--head {
-    font-family: "Roboto";
-    font-weight: 700;
-    color: var(--black);
-    line-height: 2;
-    margin-left: 24px;
-  }
-  .cards__figcaption--text {
-    line-height: 1.87;
-    margin-left: 24px;
-    margin-bottom: 20px;
-  }
-  .figcaption1 {
-    font-family: "Roboto";
-    font-weight: 700;
-    color: var(--black);
-  }
-  .portfolio-section {
-    display: flex;
-  }
-    
+}
+
+.figcaption1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: var(--black);
+}
+.portfolio-section {
+  display: flex;
+}
