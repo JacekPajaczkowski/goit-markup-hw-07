@@ -273,7 +273,7 @@
   <footer class="footer1">
     <div class="container footer2">
       <div>
-        <a class="logo-link1" href="./index.html">Web<span class="title1">Studio</span></a>
+        <a class="logo-link logo-link--color" href="./index.html">Web<span class="logo-link__title--color">Studio</span></a>
         <div class="footer-adress">
           <ul class="footer-adres-list">
             <li>m. Warszawa, Al. Jerozolimskie 21</li>
@@ -311,10 +311,10 @@
       </div>
       <div class="newsletter">
         ZAPISZ SIĘ DO NEWSLETTERA
-        <form class="form" action="javascript:void(0);">
-          <input class="input0" id="email" name="email" placeholder="E-mail" required />
-          <button class="button" type="submit">
-            <span class="button-text">Zapisz się</span><svg class="send" height="24" width="24">
+        <form class="newsletter-form" action="javascript:void(0);">
+          <input class="newsletter-form__input" id="email" name="email" placeholder="E-mail" required />
+          <button class="newsletter-form__button" type="submit">
+            <span class="newsletter-form__button-text">Zapisz się</span><svg class="newsletter-form__send" height="24" width="24">
               <use href="./images/icons.svg#send"></use>
             </svg>
           </button>
@@ -325,27 +325,27 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>X</button>
-      <form class="form1" action="javascript:void(0);">
-        <span class="form1-title">Zostaw swoje dane w formularzu poniżej</span>
-        <label class="label1" for="name"><svg class="name" height="12" width="12">
+      <form class="modal-form" action="javascript:void(0);">
+        <span class="modal-form__title">Zostaw swoje dane w formularzu poniżej</span>
+        <label class="modal-form__label" for="name"><svg class="name" height="12" width="12">
             <use href="./images/icons.svg#imie"></use>
           </svg>
           Imie
-          <input class="input" id="name" name="name" required /></label>
+          <input class="modal-form__input" id="name" name="name" required /></label>
 
-        <label class="label1" for="telefon"><svg class="telefon" height="13" width="13">
+        <label class="modal-form__label" for="telefon"><svg class="telefon" height="13" width="13">
             <use href="./images/icons.svg#telefon"></use>
           </svg>
           Telefon
-          <input class="input" id="telefon" name="telefon" required /></label>
+          <input class="modal-form__input" id="telefon" name="telefon" required /></label>
 
-        <label class="label1" for="modal-email"><svg class="modal-email" height="12" width="15">
+        <label class="modal-form__label" for="modal-email"><svg class="modal-email" height="12" width="15">
             <use href="./images/icons.svg#mail"></use>
           </svg>
           Email
-          <input class="input" id="modal-email" name="modal-email" required /></label>
+          <input class="modal-form__input" id="modal-email" name="modal-email" required /></label>
 
-        <label class="label1" for="komentarz">Komentarz</label>
+        <label class="modal-form__label" for="komentarz">Komentarz</label>
         <textarea class="textarea" id="komentarz" name="komentarz" placeholder="Wprowadź tekst" width="448px"
           height="120px"></textarea>
         <input class="input1 visually-hidden" id="regulamin" name="regulamin" type="checkbox" required /><label
@@ -354,7 +354,7 @@
             <a href="#">Politykę Prywatności</a>
           </div>
         </label>
-        <button class="form2-button" type="submit">Wyślij</button>
+        <button class="modal-form__button" type="submit">Wyślij</button>
       </form>
     </div>
   </div>

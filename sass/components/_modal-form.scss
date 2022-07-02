@@ -1,41 +1,26 @@
-.form1 {
-    display: flex;
-    flex-direction: column;
-    width: 448px;
-    margin: auto;
-    font-size: 20px;
-    font-weight: 700;
-    color: #000;
-    position: relative;
-  }
-  .form1-title {
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+
+  &__title {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
   }
-  .form1 label:focus-within svg {
+  &__label:focus-within svg {
     fill: var(--brand-color);
   }
-  .label1 {
+  &__label {
     font-size: 12px;
     font-weight: 400;
   }
-  .name {
-    position: absolute;
-    top: 107px;
-    left: 15px;
-  }
-  .telefon {
-    position: absolute;
-    top: 174.26px;
-    left: 14.27px;
-  }
-  .modal-email {
-    position: absolute;
-    top: 243px;
-    left: 13.5px;
-  }
-  .input {
+  &__input {
     height: 40px;
     width: 448px;
     margin-top: 4px;
@@ -46,40 +31,57 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      border: 1px solid #2196f3;
+      fill: var(--brand-color);
+      outline: none;
+    }
   }
-  .input:focus,
-  .input:hover {
-    border: 1px solid #2196f3;
-    fill: var(--brand-color);
-    outline: none;
-  }
-  .input1:checked + .label2::before {
-    background-color: var(--brand-color);
-    background-image: url(../images/vector.svg);
-    background-position: 50% 50%;
-    border: none;
-    background-repeat: no-repeat;
-  }
-  .visually-hidden {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip: rect(1px 1px 1px 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-  }
-  .label2 {
-    display: flex;
-    font-size: 14px;
-    font-weight: 400;
-    color: #757575;
-    margin-top: 20px;
-    margin-left: 15px;
-    cursor: pointer;
-  }
-  .label2::before {
+}
+.name {
+  position: absolute;
+  top: 107px;
+  left: 15px;
+}
+.telefon {
+  position: absolute;
+  top: 174.26px;
+  left: 14.27px;
+}
+.modal-email {
+  position: absolute;
+  top: 243px;
+  left: 13.5px;
+}
+.input1:checked + .label2::before {
+  background-color: var(--brand-color);
+  background-image: url(../images/vector.svg);
+  background-position: 50% 50%;
+  border: none;
+  background-repeat: no-repeat;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.label2 {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  margin-top: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+
+  &::before {
     display: inline-block;
     content: "";
     width: 16px;
@@ -91,91 +93,43 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .textarea {
-    margin-top: 4px;
-    font-size: 12px;
-    height: 120px;
-    resize: none;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .textarea:focus,
-  .textarea:hover {
+}
+.textarea {
+  margin-top: 4px;
+  font-size: 12px;
+  height: 120px;
+  resize: none;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
     border: 1px solid #2196f3;
     outline: none;
   }
-  .form2-button {
-    background: var(--brand-color);
-  
-    cursor: pointer;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-  
-    text-align: center;
-    letter-spacing: 0.06em;
-  
-    color: var(--white);
-    border-radius: 4px;
-    border-style: none;
-    height: 50px;
-    width: 200px;
-    margin-top: 30px;
-    margin-left: 124px;
-  }
-  .form2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 448px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: 20px;
-  }
-  .section-buttons {
-    list-style: none;
-  
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-left: 0%;
-    padding-top: 94px;
-    padding-bottom: 50px;
-  }
-  .section-buttons li:nth-child(1n + 2) {
-    margin-left: 8px;
-  }
-  .button1-1 {
-    font-weight: 500;
-    font-family: "Roboto";
-    border-style: none;
-    background: #f5f4fa;
-    cursor: pointer;
-    line-height: 1.62;
-    border-radius: 0px 0px 4px 4px;
-    padding: 6px 22px 6px 22px;
-    transition-property: color, background-color, box-shadow, border-radius;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:active {
-    background: var(--brand-color);
-  }
-  &:hover,
-  &:focus {
-    color: var(--white);
-    background-color: var(--brand-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
 }
-                    
+.modal-form__button {
+  background: var(--brand-color);
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white);
+  border-radius: 4px;
+  border-style: none;
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 124px;
+}

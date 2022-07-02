@@ -18,4 +18,14 @@
   &:focus {
     color: var(--brand-color);
   }
+  &--color {
+    color: var(--brand-color);
+    &:hover,
+    &:focus {
+      color: var(--white);
+    }
+  }
+  &__title--color {
+    color: var(--white);
+  }
 }
