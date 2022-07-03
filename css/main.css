@@ -93,7 +93,7 @@ p {
   margin-right: 10px;
 }
 
-.button1 {
+.button {
   background: var(--brand-color);
   cursor: pointer;
   font-weight: 700;
@@ -107,6 +107,39 @@ p {
   height: 50px;
   width: 200px;
   margin-top: 30px;
+}
+.button__portfolio {
+  font-weight: 500;
+  font-family: "Roboto";
+  border-style: none;
+  background: #f5f4fa;
+  line-height: 1.62;
+  border-radius: 0px 0px 4px 4px;
+  padding: 6px 22px 6px 22px;
+  transition-property: color, background-color, box-shadow, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__portfolio:active {
+  background: var(--brand-color);
+}
+.button__portfolio:hover, .button__portfolio:focus {
+  color: var(--white);
+  background-color: var(--brand-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-buttons {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 0%;
+  padding-bottom: 50px;
+}
+.section-buttons li:nth-child(1n+2) {
+  margin-left: 8px;
 }
 
 .cards {
@@ -465,7 +498,6 @@ p {
   display: flex;
   margin-left: 93px;
 }
-
 .navigation__list {
   font-weight: 500;
   font-size: 14px;
@@ -480,7 +512,6 @@ p {
   width: 254px;
   transition: color;
 }
-
 .navigation__link {
   text-decoration: none;
   color: var(--shadow2);
@@ -500,7 +531,6 @@ p {
   color: var(--brand-color);
   text-decoration: none;
 }
-
 .navigation__link--active {
   text-decoration: none;
   color: var(--brand-color);
@@ -532,6 +562,7 @@ p {
 .newsletter-form__input {
   width: 358px;
   height: 50px;
+  padding-left: 16px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -564,41 +595,6 @@ p {
 .newsletter-form__send {
   fill: #fff;
   margin-left: 24px;
-}
-
-.portfolio__button {
-  font-weight: 500;
-  font-family: "Roboto";
-  border-style: none;
-  background: #f5f4fa;
-  cursor: pointer;
-  line-height: 1.62;
-  border-radius: 0px 0px 4px 4px;
-  padding: 6px 22px 6px 22px;
-  transition-property: color, background-color, box-shadow, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio__button:active {
-  background: var(--brand-color);
-}
-.portfolio__button:hover, .portfolio__button:focus {
-  color: var(--white);
-  background-color: var(--brand-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.section-buttons {
-  list-style: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  padding-left: 0%;
-  padding-bottom: 50px;
-}
-.section-buttons li:nth-child(1n+2) {
-  margin-left: 8px;
 }
 
 .product {
@@ -636,10 +632,6 @@ p {
   padding-top: 16px;
   padding-bottom: 18px;
 }
-.social-list__link:hover, .social-list__link:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
 .social-list__link {
   width: 44px;
   height: 44px;
@@ -654,6 +646,14 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-list__link:hover, .social-list__link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.social-list__link--color {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+}
 .social-list__icon {
   width: 20px;
   height: 20px;
@@ -661,20 +661,6 @@ p {
   color: currentColor;
   justify-content: center;
   align-items: center;
-}
-.social-list__link--color {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #fff;
-  margin-right: 10px;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team {
