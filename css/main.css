@@ -108,6 +108,9 @@ p {
   width: 200px;
   margin-top: 30px;
 }
+.button--modal {
+  margin-left: 124px;
+}
 .button__portfolio {
   font-weight: 500;
   font-family: "Roboto";
@@ -295,7 +298,7 @@ p {
 .logo-link--color:hover, .logo-link--color:focus {
   color: var(--white);
 }
-.logo-link__title--color {
+.logo-link--color--color {
   color: var(--white);
 }
 
@@ -414,23 +417,6 @@ p {
 .textarea:focus, .textarea:hover {
   border: 1px solid #2196f3;
   outline: none;
-}
-
-.modal-form__button {
-  background: var(--brand-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  border-radius: 4px;
-  border-style: none;
-  height: 50px;
-  width: 200px;
-  margin-top: 30px;
-  margin-left: 124px;
 }
 
 .backdrop {
@@ -688,14 +674,14 @@ p {
   margin: 0;
   margin-bottom: 30px;
 }
+.team__figure--img {
+  margin-bottom: 30px;
+}
 .team__figcaption {
   font-weight: 500;
   text-align: center;
   color: var(--black);
   line-height: 1.17;
-}
-.team__figure--img {
-  margin-bottom: 30px;
 }
 .team__figcaption--p {
   margin-top: 10px;
@@ -757,9 +743,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mail1:hover,
-.mail1:focus {
+.mail1:hover, .mail1:focus {
   color: var(--brand-color);
   text-decoration: none;
 }
@@ -771,9 +755,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.phone1:hover,
-.phone1:focus {
+.phone1:hover, .phone1:focus {
   color: var(--brand-color);
   text-decoration: none;
 }

@@ -24,8 +24,9 @@
     &:focus {
       color: var(--white);
     }
-  }
-  &__title--color {
-    color: var(--white);
+
+    &--color {
+      color: var(--white);
+    }
   }
 }

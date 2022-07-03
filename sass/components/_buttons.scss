@@ -16,7 +16,9 @@
   height: 50px;
   width: 200px;
   margin-top: 30px;
-
+  &--modal {
+    margin-left: 124px;
+  }
   &__portfolio {
     font-weight: 500;
     font-family: "Roboto";
